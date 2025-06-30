@@ -76,7 +76,7 @@ if __name__ == '__main__':
     identity_accuracy = evaluate(identity_model, identity_representations, test_loader, device)
     print(f"Test Identity Accuracy: {identity_accuracy * 100:.2f}%")
 
-    """epochs = 3
+    epochs = 3
     for epoch in range(epochs):
         print(f"Epoch: {epoch}")
         t0 = time.time_ns()
@@ -100,4 +100,4 @@ if __name__ == '__main__':
         t1 = time.time_ns()
         print(f"Epoch time (sec): {(t1-t0)/10**9:.1f}")
     
-    torch.save(model.state_dict(), f'model.pth')"""
+    torch.save(model.state_dict(), f'model.pth')
